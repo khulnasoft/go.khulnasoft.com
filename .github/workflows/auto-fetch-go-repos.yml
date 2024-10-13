@@ -33,13 +33,22 @@ jobs:
 
     - name: Add Go Modules
       run: |
-        repos="ElasticSearch"  # Example: replace this with dynamic repo names
+        # Check if repositories.txt exists
+        if [ ! -f repositories.txt ]; then
+          echo "repositories.txt file not found!"
+          exit 1
+        fi
+    
+        # Read repository names from repositories.txt
+        repos=$(<repositories.txt)
+    
         if [ -z "$repos" ]; then
           echo "No Go repositories found"
           exit 0
         fi
     
         for repo in $repos; do
+          echo "Processing repository: $repo"
           ./gen.sh "$repo"
         done
 
