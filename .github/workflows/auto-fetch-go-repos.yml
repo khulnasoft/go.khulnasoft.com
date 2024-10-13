@@ -1,0 +1,50 @@
+name: Auto Fetch Go Repos and Add Modules
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs daily at midnight
+  workflow_dispatch:      # Allows manual triggering
+
+jobs:
+  fetch-and-add-modules:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Go environment
+      uses: actions/setup-go@v4
+      with:
+        go-version: '1.20'
+
+    - name: Fetch Go Repositories
+      id: fetch_go_repos
+      run: |
+        org_name="khulnasoft"  # Replace with your organization name
+        repos=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+        "https://api.github.com/orgs/$org_name/repos?per_page=100" | jq -r '.[] | select(.language == "Go") | .name')
+        
+        echo "Found Go repositories: $repos"
+        echo "::set-output name=repos::$repos"
+
+    - name: Add Go Modules
+      run: |
+        repos="${{ steps.fetch_go_repos.outputs.repos }}"
+
+        if [ -z "$repos" ]; then
+          echo "No Go repositories found"
+          exit 0
+        fi
+
+        for repo in $repos; do
+          ./gen.sh "$repo"
+        done
+
+    - name: Push changes
+      run: |
+        git config --global user.email "info@khulnasoft.com"
+        git config --global user.name "GitHub Action"
+        git add .
+        git commit -m "Auto add Go modules for org repos"
+        git push
