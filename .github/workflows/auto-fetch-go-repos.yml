@@ -47,6 +47,15 @@ jobs:
       run: |
         git config --global user.email "info@khulnasoft.com"
         git config --global user.name "GitHub Action"
+        
+        # Add changes
         git add .
-        git commit -m "Auto add Go modules for org repos"
-        git push
+    
+        # Check for changes and commit if there are any
+        if [ "$(git diff --cached --name-only)" ]; then
+            git commit -m "Auto add Go modules for org repos"
+            git push
+        else
+            echo "No changes to commit."
+        fi
+
