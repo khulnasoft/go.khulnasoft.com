@@ -8,6 +8,7 @@ on:
 jobs:
   fetch-and-add-modules:
     runs-on: ubuntu-latest
+    if: github.repository == 'khulnasoft/go.khulnasoft.com' # only run for main repo
 
     steps:
     - name: Checkout repository
