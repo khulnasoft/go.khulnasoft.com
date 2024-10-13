@@ -28,15 +28,17 @@ jobs:
         echo "Found Go repositories: $repos"
         echo "::set-output name=repos::$repos"
 
+    - name: Make gen.sh executable
+      run: chmod +x ./gen.sh
+
     - name: Add Go Modules
       run: |
-        repos="${{ steps.fetch_go_repos.outputs.repos }}"
-
+        repos="ElasticSearch"  # Example: replace this with dynamic repo names
         if [ -z "$repos" ]; then
           echo "No Go repositories found"
           exit 0
         fi
-
+    
         for repo in $repos; do
           ./gen.sh "$repo"
         done
