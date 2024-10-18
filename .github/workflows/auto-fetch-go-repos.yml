@@ -22,7 +22,7 @@ jobs:
     - name: Fetch Go Repositories
       id: fetch_go_repos
       run: |
-        org_name="khulnasoft" "khulnasoft-lab"  # Replace with your organization name
+        org_name="khulnasoft-lab"  # Replace with your organization name
         repos=$(curl -s -H "Authorization: token ${{ secrets.ORG_REPO_TOKEN }}" \
         "https://api.github.com/orgs/$org_name/repos?per_page=100" | jq -r '.[] | select(.language == "Go") | .name')
         
@@ -68,4 +68,3 @@ jobs:
         else
             echo "No changes to commit."
         fi
-
