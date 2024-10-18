@@ -11,24 +11,32 @@ module() {
     local module_path="${module_root}${module_subdir:+/$module_subdir}"
 
     mkdir -p "$module_path"
-    
-    # Generate the HTML file
-    local github_url="https://github.com/khulnasoft/$github_repo_name"
-    printf '%s\n' \
-    "<!doctype html>" \
-    "<html lang=\"en\">" \
-    "<head>" \
-    "    <title>go.khulnasoft.com/$module_path</title>" \
-    "    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>" \
-    "    <meta name=\"go-import\" content=\"go.khulnasoft.com/$module_root git $github_url\">" \
-    "    <meta http-equiv=\"refresh\" content=\"0; url=$github_url\">" \
-    "</head>" \
-    "<body>" \
-    "    Redirecting to <a href=\"$github_url\">$github_url</a>" \
-    "</body>" \
-    "</html>" > "$module_path/index.html"
 
-    echo "Generated module for $github_repo_name at $module_path/index.html"
+    # Define an array for the organizations
+    local orgs=("khulnasoft" "khulnasoft-lab")
+
+    # Loop through each organization and generate an HTML file for both
+    for org_name in "${orgs[@]}"; do
+        # GitHub URL for the repo based on the organization
+        local github_url="https://github.com/$org_name/$github_repo_name"
+        
+        # Generate the HTML file with go-import meta tags
+        printf '%s\n' \
+        "<!doctype html>" \
+        "<html lang=\"en\">" \
+        "<head>" \
+        "    <title>go.khulnasoft.com/$module_path</title>" \
+        "    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>" \
+        "    <meta name=\"go-import\" content=\"go.khulnasoft.com/$module_root git $github_url\">" \
+        "    <meta http-equiv=\"refresh\" content=\"0; url=$github_url\">" \
+        "</head>" \
+        "<body>" \
+        "    Redirecting to <a href=\"$github_url\">$github_url</a>" \
+        "</body>" \
+        "</html>" > "$module_path/index-$org_name.html"
+
+        echo "Generated module for $github_repo_name in $org_name at $module_path/index-$org_name.html"
+    done
 }
 
 # Main script execution
