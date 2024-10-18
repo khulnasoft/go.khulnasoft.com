@@ -18,9 +18,9 @@ module() {
     "<!doctype html>" \
     "<html lang=\"en\">" \
     "<head>" \
-    "    <title>go.khulnasoft.com/$module_path</title>" \
+    "    <title>go.khulnasoft.com/lab/$module_path</title>" \
     "    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>" \
-    "    <meta name=\"go-import\" content=\"go.khulnasoft.com/$module_root git $github_url\">" \
+    "    <meta name=\"go-import\" content=\"go.khulnasoft.com/lab/$module_root git $github_url\">" \
     "    <meta http-equiv=\"refresh\" content=\"0; url=$github_url\">" \
     "</head>" \
     "<body>" \
