@@ -5,6 +5,7 @@ starboard-khulnasoft-csp-webhook
 go-licenses
 go-progress
 go-sdk
+git
 kube-bench
 archiver
 gpt4cli
