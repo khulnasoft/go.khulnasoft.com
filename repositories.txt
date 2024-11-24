@@ -4,6 +4,7 @@ congo
 starboard-khulnasoft-csp-webhook
 go-licenses
 go-progress
+go-sdk
 kube-bench
 archiver
 gpt4cli
