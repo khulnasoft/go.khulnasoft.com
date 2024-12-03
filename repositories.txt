@@ -40,3 +40,4 @@ lazydocker
 kengine-plugin-sdk-go
 kengine-datasource-backend
 nxgit
+pkg
