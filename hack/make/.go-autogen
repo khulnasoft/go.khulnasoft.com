@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+LDFLAGS="${LDFLAGS} \
+-X \"go.khulnasoft.com/dockerversion.Version=${VERSION}\" \
+-X \"go.khulnasoft.com/dockerversion.GitCommit=${GITCOMMIT}\" \
+-X \"go.khulnasoft.com/dockerversion.BuildTime=${BUILDTIME}\" \
+-X \"go.khulnasoft.com/dockerversion.PlatformName=${PLATFORM}\" \
+-X \"go.khulnasoft.com/dockerversion.ProductName=${PRODUCT}\" \
+-X \"go.khulnasoft.com/dockerversion.DefaultProductLicense=${DEFAULT_PRODUCT_LICENSE}\" "
+
+# Compile the Windows resources into the sources
+if [ "$(go env GOOS)" = "windows" ]; then
+  if [ ! -x "$(command -v go-winres)" ]; then
+    >&2 echo "go-winres not found, skipping manifesting binary"
+  else
+    (
+      . hack/make/.mkwinres
+      go generate -v "${GO_PACKAGE}"
+    )
+  fi
+fi
