@@ -1,4 +1,4 @@
-package drivers // import "github.com/go.khulnasoft.com/volume/drivers"
+package drivers // import "go.khulnasoft.com/volume/drivers"
 
 import (
 	"context"
@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/containerd/log"
-	"github.com/go.khulnasoft.com/volume"
+	"go.khulnasoft.com/volume"
 )
 
 var errNoSuchVolume = errors.New("no such volume")
