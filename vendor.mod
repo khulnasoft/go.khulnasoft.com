@@ -70,14 +70,14 @@ require (
 	github.com/moby/patternmatcher v0.6.0
 	github.com/moby/pubsub v1.0.0
 	github.com/moby/swarmkit/v2 v2.0.0-20250103191802-8c1959736554
-	github.com/moby/sys/mount v0.3.4
-	github.com/moby/sys/mountinfo v0.7.2
-	github.com/moby/sys/reexec v0.1.0
-	github.com/moby/sys/sequential v0.6.0
-	github.com/moby/sys/signal v0.7.1
-	github.com/moby/sys/symlink v0.3.0
-	github.com/moby/sys/user v0.3.0
-	github.com/moby/sys/userns v0.1.0
+	go.khulnasoft.com/sys/mount v0.3.4
+	go.khulnasoft.com/sys/mountinfo v0.7.2
+	go.khulnasoft.com/sys/reexec v0.1.0
+	go.khulnasoft.com/sys/sequential v0.6.0
+	go.khulnasoft.com/sys/signal v0.7.1
+	go.khulnasoft.com/sys/symlink v0.3.0
+	go.khulnasoft.com/sys/user v0.3.0
+	go.khulnasoft.com/sys/userns v0.1.0
 	github.com/moby/term v0.5.2
 	github.com/morikuni/aec v1.0.0
 	github.com/opencontainers/go-digest v1.0.0

@@ -11,7 +11,7 @@ import (
 	"sync"
 
 	"github.com/containerd/log"
-	"github.com/moby/sys/userns"
+	"go.khulnasoft.com/sys/userns"
 	"github.com/pkg/errors"
 )
 

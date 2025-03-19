@@ -11,7 +11,7 @@ import (
 
 	"github.com/containerd/log"
 	"go.khulnasoft.com/daemon/graphdriver"
-	"github.com/moby/sys/userns"
+	"go.khulnasoft.com/sys/userns"
 	"github.com/pkg/errors"
 	"golang.org/x/sys/unix"
 )

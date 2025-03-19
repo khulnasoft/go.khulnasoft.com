@@ -31,7 +31,7 @@ import (
 	"go.khulnasoft.com/libnetwork/osl"
 	"go.khulnasoft.com/libnetwork/types"
 	"go.khulnasoft.com/pkg/plugins"
-	"github.com/moby/sys/reexec"
+	"go.khulnasoft.com/sys/reexec"
 	"github.com/pkg/errors"
 	"github.com/vishvananda/netns"
 	"golang.org/x/sync/errgroup"

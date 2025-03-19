@@ -28,7 +28,7 @@ import (
 	"go.khulnasoft.com/pkg/idtools"
 	"github.com/klauspost/compress/zstd"
 	"github.com/moby/patternmatcher"
-	"github.com/moby/sys/sequential"
+	"go.khulnasoft.com/sys/sequential"
 )
 
 // ImpliedDirectoryMode represents the mode (Unix permissions) applied to directories that are implied by files in a

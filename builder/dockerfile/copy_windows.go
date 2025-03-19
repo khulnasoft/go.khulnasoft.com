@@ -10,7 +10,7 @@ import (
 	"go.khulnasoft.com/internal/usergroup"
 	"go.khulnasoft.com/pkg/idtools"
 	"go.khulnasoft.com/pkg/system"
-	"github.com/moby/sys/reexec"
+	"go.khulnasoft.com/sys/reexec"
 	"github.com/pkg/errors"
 	"golang.org/x/sys/windows"
 )

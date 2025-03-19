@@ -22,7 +22,7 @@ import (
 	"go.khulnasoft.com/pkg/system"
 	volumemounts "go.khulnasoft.com/volume/mounts"
 	"github.com/docker/go-connections/nat"
-	"github.com/moby/sys/signal"
+	"go.khulnasoft.com/sys/signal"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/opencontainers/selinux/go-selinux"
 	"github.com/pkg/errors"

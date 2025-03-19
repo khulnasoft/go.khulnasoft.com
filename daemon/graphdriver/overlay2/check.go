@@ -12,7 +12,7 @@ import (
 	"github.com/containerd/containerd/v2/core/mount"
 	"go.khulnasoft.com/daemon/graphdriver/overlayutils"
 	"go.khulnasoft.com/pkg/system"
-	"github.com/moby/sys/userns"
+	"go.khulnasoft.com/sys/userns"
 	"github.com/pkg/errors"
 	"golang.org/x/sys/unix"
 )

@@ -11,7 +11,7 @@ import (
 	"go.khulnasoft.com/pkg/longpath"
 	"go.khulnasoft.com/pkg/system"
 	"go.khulnasoft.com/pkg/tarsum"
-	"github.com/moby/sys/symlink"
+	"go.khulnasoft.com/sys/symlink"
 	"github.com/pkg/errors"
 )
 

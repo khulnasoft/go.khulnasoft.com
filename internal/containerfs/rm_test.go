@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/moby/sys/mount"
+	"go.khulnasoft.com/sys/mount"
 )
 
 func TestEnsureRemoveAllWithMount(t *testing.T) {

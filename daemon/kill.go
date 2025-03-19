@@ -12,7 +12,7 @@ import (
 	"go.khulnasoft.com/api/types/events"
 	containerpkg "go.khulnasoft.com/container"
 	"go.khulnasoft.com/errdefs"
-	"github.com/moby/sys/signal"
+	"go.khulnasoft.com/sys/signal"
 	"github.com/pkg/errors"
 )
 

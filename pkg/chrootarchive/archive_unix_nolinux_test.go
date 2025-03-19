@@ -5,7 +5,7 @@ package chrootarchive
 import (
 	"testing"
 
-	"github.com/moby/sys/reexec"
+	"go.khulnasoft.com/sys/reexec"
 )
 
 func TestMain(m *testing.M) {

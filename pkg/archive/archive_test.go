@@ -17,7 +17,7 @@ import (
 	"time"
 
 	"go.khulnasoft.com/pkg/idtools"
-	"github.com/moby/sys/userns"
+	"go.khulnasoft.com/sys/userns"
 	"gotest.tools/v3/assert"
 	is "gotest.tools/v3/assert/cmp"
 	"gotest.tools/v3/skip"

@@ -1,12 +1,12 @@
 // Package reexec facilitates the busybox style reexec of a binary.
 //
-// Deprecated: this package is deprecated and moved to a separate module. Use [github.com/moby/sys/reexec] instead.
+// Deprecated: this package is deprecated and moved to a separate module. Use [go.khulnasoft.com/sys/reexec] instead.
 package reexec
 
 import (
 	"os/exec"
 
-	"github.com/moby/sys/reexec"
+	"go.khulnasoft.com/sys/reexec"
 )
 
 // Register adds an initialization func under the specified name. It panics

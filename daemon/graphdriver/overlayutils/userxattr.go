@@ -28,7 +28,7 @@ import (
 	"github.com/containerd/containerd/v2/core/mount"
 	"github.com/containerd/log"
 	"go.khulnasoft.com/pkg/parsers/kernel"
-	"github.com/moby/sys/userns"
+	"go.khulnasoft.com/sys/userns"
 )
 
 // NeedsUserXAttr returns whether overlayfs should be mounted with the "userxattr" mount option.

@@ -75,7 +75,7 @@ import (
 	"github.com/moby/buildkit/util/grpcerrors"
 	"github.com/moby/buildkit/util/tracing"
 	"github.com/moby/locker"
-	"github.com/moby/sys/userns"
+	"go.khulnasoft.com/sys/userns"
 	"github.com/pkg/errors"
 	"go.etcd.io/bbolt"
 	"go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc"

@@ -7,7 +7,7 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/moby/sys/mount"
+	"go.khulnasoft.com/sys/mount"
 	"golang.org/x/sys/unix"
 )
 

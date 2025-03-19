@@ -12,7 +12,7 @@ import (
 	"go.khulnasoft.com/errdefs"
 	"go.khulnasoft.com/pkg/archive"
 	"go.khulnasoft.com/pkg/idtools"
-	"github.com/moby/sys/user"
+	"go.khulnasoft.com/sys/user"
 )
 
 func (daemon *Daemon) tarCopyOptions(ctr *container.Container, noOverwriteDirNonDir bool) (*archive.TarOptions, error) {

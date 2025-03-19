@@ -44,7 +44,7 @@ import (
 	"go.khulnasoft.com/pkg/sysinfo"
 	"go.khulnasoft.com/runconfig"
 	volumemounts "go.khulnasoft.com/volume/mounts"
-	"github.com/moby/sys/mount"
+	"go.khulnasoft.com/sys/mount"
 	"github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/opencontainers/selinux/go-selinux"
 	"github.com/opencontainers/selinux/go-selinux/label"

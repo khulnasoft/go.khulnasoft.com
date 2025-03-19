@@ -11,7 +11,7 @@ import (
 	"syscall"
 
 	"go.khulnasoft.com/pkg/idtools"
-	"github.com/moby/sys/user"
+	"go.khulnasoft.com/sys/user"
 )
 
 // LookupUser uses traditional local system files lookup (from libcontainer/user) on a username,

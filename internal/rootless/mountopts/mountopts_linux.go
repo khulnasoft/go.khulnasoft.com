@@ -10,7 +10,7 @@ import (
 // kernel restrictions that require user namespace mounts to preserve
 // CL_UNPRIVILEGED locked flags.
 //
-// TODO: Move to github.com/moby/sys/mount, and update BuildKit copy of this code as well (https://github.com/moby/buildkit/blob/v0.13.0/util/rootless/mountopts/mountopts_linux.go#L11-L18)
+// TODO: Move to go.khulnasoft.com/sys/mount, and update BuildKit copy of this code as well (https://github.com/moby/buildkit/blob/v0.13.0/util/rootless/mountopts/mountopts_linux.go#L11-L18)
 func UnprivilegedMountFlags(path string) ([]string, error) {
 	var statfs unix.Statfs_t
 	if err := unix.Statfs(path, &statfs); err != nil {

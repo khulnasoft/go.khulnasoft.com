@@ -23,7 +23,7 @@ import (
 	"go.khulnasoft.com/layer"
 	"go.khulnasoft.com/pkg/archive"
 	"go.khulnasoft.com/pkg/system"
-	"github.com/moby/sys/sequential"
+	"go.khulnasoft.com/sys/sequential"
 	"github.com/opencontainers/go-digest"
 	"github.com/opencontainers/image-spec/specs-go"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"

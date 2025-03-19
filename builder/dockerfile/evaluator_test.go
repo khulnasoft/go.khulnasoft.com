@@ -9,7 +9,7 @@ import (
 	"go.khulnasoft.com/builder/remotecontext"
 	"go.khulnasoft.com/pkg/archive"
 	"github.com/moby/buildkit/frontend/dockerfile/instructions"
-	"github.com/moby/sys/reexec"
+	"go.khulnasoft.com/sys/reexec"
 	"gotest.tools/v3/assert"
 	is "gotest.tools/v3/assert/cmp"
 	"gotest.tools/v3/skip"

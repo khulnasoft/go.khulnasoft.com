@@ -11,7 +11,7 @@ import (
 	"syscall"
 
 	"go.khulnasoft.com/pkg/archive"
-	"github.com/moby/sys/reexec"
+	"go.khulnasoft.com/sys/reexec"
 	"golang.org/x/sys/unix"
 )
 

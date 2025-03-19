@@ -7,8 +7,8 @@ import (
 	"strings"
 
 	"go.khulnasoft.com/pkg/idtools"
-	"github.com/moby/sys/symlink"
-	"github.com/moby/sys/user"
+	"go.khulnasoft.com/sys/symlink"
+	"go.khulnasoft.com/sys/user"
 	"github.com/pkg/errors"
 )
 

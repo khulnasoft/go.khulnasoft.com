@@ -19,7 +19,7 @@ import (
 	"github.com/moby/buildkit/frontend/dockerfile/parser"
 	"github.com/moby/patternmatcher"
 	"github.com/moby/patternmatcher/ignorefile"
-	"github.com/moby/sys/symlink"
+	"go.khulnasoft.com/sys/symlink"
 	"github.com/pkg/errors"
 )
 

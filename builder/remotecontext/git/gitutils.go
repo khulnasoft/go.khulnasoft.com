@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/moby/sys/symlink"
+	"go.khulnasoft.com/sys/symlink"
 	"github.com/pkg/errors"
 )
 

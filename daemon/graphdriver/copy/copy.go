@@ -14,7 +14,7 @@ import (
 
 	"go.khulnasoft.com/pkg/pools"
 	"go.khulnasoft.com/pkg/system"
-	"github.com/moby/sys/userns"
+	"go.khulnasoft.com/sys/userns"
 	"golang.org/x/sys/unix"
 )
 

@@ -13,7 +13,7 @@ import (
 	"github.com/containerd/cgroups/v3/cgroup1"
 	"github.com/containerd/containerd/v2/pkg/seccomp"
 	"github.com/containerd/log"
-	"github.com/moby/sys/mountinfo"
+	"go.khulnasoft.com/sys/mountinfo"
 )
 
 var (

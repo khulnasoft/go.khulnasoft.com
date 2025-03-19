@@ -9,7 +9,7 @@ import (
 	"testing"
 
 	"go.khulnasoft.com/daemon/config"
-	"github.com/moby/sys/reexec"
+	"go.khulnasoft.com/sys/reexec"
 	"golang.org/x/sys/unix"
 	"gotest.tools/v3/assert"
 )

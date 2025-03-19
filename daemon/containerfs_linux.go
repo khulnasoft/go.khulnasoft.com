@@ -11,8 +11,8 @@ import (
 
 	"github.com/containerd/log"
 	"github.com/hashicorp/go-multierror"
-	"github.com/moby/sys/mount"
-	"github.com/moby/sys/symlink"
+	"go.khulnasoft.com/sys/mount"
+	"go.khulnasoft.com/sys/symlink"
 	"golang.org/x/sys/unix"
 
 	containertypes "go.khulnasoft.com/api/types/container"

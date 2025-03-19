@@ -36,7 +36,7 @@ func init() {
 	// fate, the Go runtime parks the thread instead of exiting if a
 	// goroutine returns while locked to the startup thread. More
 	// information can be found in the Go runtime sources:
-	// `go doc -u -src runtime.mexit`.) The github.com/moby/sys/mountinfo
+	// `go doc -u -src runtime.mexit`.) The go.khulnasoft.com/sys/mountinfo
 	// package reads from /proc/self/mountinfo, so will read the mount tree
 	// for the wrong namespace if the startup thread has had its mount
 	// namespace unshared! The /proc/thread-self/ directory, introduced in

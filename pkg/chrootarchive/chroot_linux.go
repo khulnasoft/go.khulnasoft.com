@@ -3,7 +3,7 @@ package chrootarchive
 import (
 	"go.khulnasoft.com/internal/mounttree"
 	"go.khulnasoft.com/internal/unshare"
-	"github.com/moby/sys/mount"
+	"go.khulnasoft.com/sys/mount"
 	"golang.org/x/sys/unix"
 )
 

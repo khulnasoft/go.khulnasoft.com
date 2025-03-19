@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 
 	"go.khulnasoft.com/pkg/archive"
-	"github.com/moby/sys/userns"
+	"go.khulnasoft.com/sys/userns"
 )
 
 // applyLayerHandler parses a diff in the standard layer format from `layer`, and

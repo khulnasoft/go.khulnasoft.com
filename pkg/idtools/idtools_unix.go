@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"syscall"
 
-	"github.com/moby/sys/user"
+	"go.khulnasoft.com/sys/user"
 )
 
 func mkdirAs(path string, mode os.FileMode, owner Identity, mkAll, chownExisting bool) error {

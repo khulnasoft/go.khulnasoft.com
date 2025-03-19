@@ -7,7 +7,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/moby/sys/mount"
+	"go.khulnasoft.com/sys/mount"
 	"github.com/pkg/errors"
 )
 

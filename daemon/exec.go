@@ -18,7 +18,7 @@ import (
 	"go.khulnasoft.com/container/stream"
 	"go.khulnasoft.com/errdefs"
 	"go.khulnasoft.com/pkg/pools"
-	"github.com/moby/sys/signal"
+	"go.khulnasoft.com/sys/signal"
 	"github.com/moby/term"
 	"github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/pkg/errors"

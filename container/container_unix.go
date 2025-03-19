@@ -15,7 +15,7 @@ import (
 	mounttypes "go.khulnasoft.com/api/types/mount"
 	swarmtypes "go.khulnasoft.com/api/types/swarm"
 	volumemounts "go.khulnasoft.com/volume/mounts"
-	"github.com/moby/sys/mount"
+	"go.khulnasoft.com/sys/mount"
 	"github.com/opencontainers/selinux/go-selinux/label"
 	"github.com/pkg/errors"
 )

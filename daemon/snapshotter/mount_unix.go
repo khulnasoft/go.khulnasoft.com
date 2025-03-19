@@ -4,7 +4,7 @@ package snapshotter
 
 import (
 	"github.com/containerd/containerd/v2/core/mount"
-	"github.com/moby/sys/mountinfo"
+	"go.khulnasoft.com/sys/mountinfo"
 	"golang.org/x/sys/unix"
 )
 

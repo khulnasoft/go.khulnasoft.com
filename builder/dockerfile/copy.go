@@ -24,7 +24,7 @@ import (
 	"go.khulnasoft.com/pkg/streamformatter"
 	"go.khulnasoft.com/pkg/system"
 	"github.com/moby/buildkit/frontend/dockerfile/instructions"
-	"github.com/moby/sys/symlink"
+	"go.khulnasoft.com/sys/symlink"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
 )

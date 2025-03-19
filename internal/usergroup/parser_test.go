@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/moby/sys/user"
+	"go.khulnasoft.com/sys/user"
 )
 
 func TestParseSubidFileWithNewlinesAndComments(t *testing.T) {

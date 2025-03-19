@@ -1,7 +1,7 @@
 package usergroup
 
 import (
-	"github.com/moby/sys/user"
+	"go.khulnasoft.com/sys/user"
 )
 
 const (

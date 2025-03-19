@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/moby/sys/userns"
+	"go.khulnasoft.com/sys/userns"
 	"golang.org/x/sys/unix"
 )
 

@@ -7,7 +7,7 @@ import (
 
 	"go.khulnasoft.com/builder"
 	"go.khulnasoft.com/pkg/archive"
-	"github.com/moby/sys/reexec"
+	"go.khulnasoft.com/sys/reexec"
 	"github.com/pkg/errors"
 	"gotest.tools/v3/skip"
 )

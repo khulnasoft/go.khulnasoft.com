@@ -36,7 +36,7 @@ import (
 	"go.khulnasoft.com/pkg/progress"
 	"go.khulnasoft.com/pkg/stringid"
 	v2 "go.khulnasoft.com/plugin/v2"
-	"github.com/moby/sys/mount"
+	"go.khulnasoft.com/sys/mount"
 	"github.com/opencontainers/go-digest"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"

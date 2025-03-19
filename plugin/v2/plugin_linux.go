@@ -13,7 +13,7 @@ import (
 	"go.khulnasoft.com/internal/rootless/mountopts"
 	"go.khulnasoft.com/internal/sliceutil"
 	"go.khulnasoft.com/oci"
-	"github.com/moby/sys/userns"
+	"go.khulnasoft.com/sys/userns"
 	"github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/pkg/errors"
 )

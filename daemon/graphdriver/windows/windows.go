@@ -32,7 +32,7 @@ import (
 	"go.khulnasoft.com/pkg/ioutils"
 	"go.khulnasoft.com/pkg/longpath"
 	"github.com/docker/go-units"
-	"github.com/moby/sys/reexec"
+	"go.khulnasoft.com/sys/reexec"
 	"github.com/pkg/errors"
 	"golang.org/x/sys/windows"
 )

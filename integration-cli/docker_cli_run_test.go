@@ -34,7 +34,7 @@ import (
 	testdaemon "go.khulnasoft.com/testutil/daemon"
 	"go.khulnasoft.com/testutil/fakecontext"
 	"github.com/docker/go-connections/nat"
-	"github.com/moby/sys/mountinfo"
+	"go.khulnasoft.com/sys/mountinfo"
 	"gotest.tools/v3/assert"
 	is "gotest.tools/v3/assert/cmp"
 	"gotest.tools/v3/icmd"

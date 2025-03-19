@@ -25,8 +25,8 @@ import (
 	"go.khulnasoft.com/pkg/progress"
 	"go.khulnasoft.com/pkg/streamformatter"
 	"go.khulnasoft.com/pkg/stringid"
-	"github.com/moby/sys/sequential"
-	"github.com/moby/sys/symlink"
+	"go.khulnasoft.com/sys/sequential"
+	"go.khulnasoft.com/sys/symlink"
 	"github.com/opencontainers/go-digest"
 )
 

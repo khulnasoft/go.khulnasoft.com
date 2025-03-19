@@ -12,7 +12,7 @@ import (
 	"go.khulnasoft.com/dockerversion"
 	"go.khulnasoft.com/pkg/rootless"
 	"github.com/moby/buildkit/util/apicaps"
-	"github.com/moby/sys/reexec"
+	"go.khulnasoft.com/sys/reexec"
 	"github.com/moby/term"
 	"github.com/spf13/cobra"
 )

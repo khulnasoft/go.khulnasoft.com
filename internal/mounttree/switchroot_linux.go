@@ -5,8 +5,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/moby/sys/mount"
-	"github.com/moby/sys/mountinfo"
+	"go.khulnasoft.com/sys/mount"
+	"go.khulnasoft.com/sys/mountinfo"
 	"golang.org/x/sys/unix"
 )
 

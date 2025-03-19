@@ -9,7 +9,7 @@ import (
 	"sync"
 
 	"go.khulnasoft.com/internal/lazyregexp"
-	"github.com/moby/sys/user"
+	"go.khulnasoft.com/sys/user"
 )
 
 // add a user and/or group to Linux /etc/passwd, /etc/group using standard

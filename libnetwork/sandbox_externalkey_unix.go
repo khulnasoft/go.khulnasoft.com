@@ -16,7 +16,7 @@ import (
 	"go.khulnasoft.com/internal/otelutil"
 	"go.khulnasoft.com/libnetwork/types"
 	"go.khulnasoft.com/pkg/stringid"
-	"github.com/moby/sys/reexec"
+	"go.khulnasoft.com/sys/reexec"
 	"github.com/opencontainers/runtime-spec/specs-go"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/propagation"

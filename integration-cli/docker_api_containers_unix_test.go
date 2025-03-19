@@ -5,7 +5,7 @@ package main
 import (
 	"testing"
 
-	"github.com/moby/sys/mount"
+	"go.khulnasoft.com/sys/mount"
 )
 
 func mountWrapper(t *testing.T, device, target, mType, options string) error {

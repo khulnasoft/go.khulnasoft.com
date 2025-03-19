@@ -35,7 +35,7 @@ import (
 	"go.khulnasoft.com/opts"
 	"go.khulnasoft.com/testutil"
 	testdaemon "go.khulnasoft.com/testutil/daemon"
-	"github.com/moby/sys/mount"
+	"go.khulnasoft.com/sys/mount"
 	"golang.org/x/sys/unix"
 	"gotest.tools/v3/assert"
 	is "gotest.tools/v3/assert/cmp"

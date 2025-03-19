@@ -10,7 +10,7 @@ import (
 	"go.khulnasoft.com/daemon/internal/mountref"
 	"go.khulnasoft.com/pkg/idtools"
 	"github.com/moby/locker"
-	"github.com/moby/sys/mountinfo"
+	"go.khulnasoft.com/sys/mountinfo"
 )
 
 // Mounter handles mounting/unmounting things coming in from a snapshotter

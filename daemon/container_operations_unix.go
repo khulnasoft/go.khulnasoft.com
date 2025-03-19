@@ -22,7 +22,7 @@ import (
 	"go.khulnasoft.com/pkg/idtools"
 	"go.khulnasoft.com/pkg/process"
 	"go.khulnasoft.com/pkg/stringid"
-	"github.com/moby/sys/mount"
+	"go.khulnasoft.com/sys/mount"
 	"github.com/opencontainers/selinux/go-selinux/label"
 	"github.com/pkg/errors"
 	"go.opentelemetry.io/otel"

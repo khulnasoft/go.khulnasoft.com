@@ -22,7 +22,7 @@ import (
 	"go.khulnasoft.com/integration-cli/cli/build"
 	"go.khulnasoft.com/pkg/sysinfo"
 	"go.khulnasoft.com/testutil"
-	"github.com/moby/sys/mount"
+	"go.khulnasoft.com/sys/mount"
 	"gotest.tools/v3/assert"
 	is "gotest.tools/v3/assert/cmp"
 	"gotest.tools/v3/icmd"
